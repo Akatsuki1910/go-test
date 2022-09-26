@@ -1,5 +1,9 @@
 {
   "version": 2,
   "name": "go",
-  "builds": [{ "src": "*.go", "use": "@vercel/go" }]
+  "builds": [{ "src": "/api/*.go", "use": "@vercel/go" }],
+  "routes": [{ "src": "/api", "dest": "/api" }],
+  "github": {
+    "silent": true
+  }
 }
